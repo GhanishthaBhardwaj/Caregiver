@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haritaki Caregivers</title>
+
+ <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <main class="app-container">
+  
+     <header class="header">
+        <h1 class="title">
+            <i class="fas fa-heart-pulse"></i>
+Haritaki Caregivers
+</h1>
+<button class="add-btn">
+    <i class="fas fa-user-plus"></i>Add Personal
+</button>
+</header>
+
+ <section class="location-section">
+  <div class="location-info">
+    <p>Your Location
+    </p>
+    <div id="location-name" class="location-name">📍 Detecting...
+</div>
+</div>
+<div id="caregiver-count" class="caregiver-count">0 nearby
+</div>
+</section>
+
+<!-- filter selection -->
+ <section class="filters">
+
+    
+     <select id="locations">
+        <option value="all">📍 All Locations</option>
+        <option value="Gurgaon">Gurgaon</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Noida">Noida</option>
+    </select>
+
+
+     <select id="Specializations">
+        <option value="all">💊 All Specializations</option>
+        <option value="Elderly Care">Elderly Care</option>
+        <option value="Post Surgery Care">Post Surgery Care</option>
+        <option value="Home Nursing">Home Nursing</option>
+        <option value="Dementia Care">Dementia Care</option>
+        <option value="Stroke Recovery">Stroke Recovery</option>
+        <option value="Palliative Care">Palliative Care</option>
+        <option value="Night Care">Night Care</option>
+    </select>
+
+    
+     <select id="status">
+        <option value="all">⚡ All Availability</option>
+        <option value="Available">🟢 Available</option>
+        <option value="Busy">🔴 Busy</option>
+        <option value="Emergency">⚡ Emergency Available</option>
+    </select>
+</section>
+
+<!-- caregivers list-->
+ <section id="caregivers" class="caregivers">
+    </section>
+
+    <!-- profile view -->
+     <dialog id="profile" class="profile">
+        <div id="profile-content" class="profile-content">
+            </div><button class="profile-close"
+onclick="document.getElementById('profile').close()">
+
+Close
+
+</button>
+</dialog>
+    </main>
+
+<script src="js/ui.js"></script>
+
+ <script src="js/app.js"></script>
+ 
+</body>
+</html>

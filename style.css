@@ -1,0 +1,351 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#7aa2f1;
+    color:#333;
+}
+
+.app-container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+.header{ display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:30px;
+}
+.add-btn{
+    background:#319355;
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    font-size:15px;
+    font-weight:600;
+
+    border-radius:25px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 12px rgba(0,0,0,0.15);
+
+    transition:0.2s;
+}
+
+.add-btn:hover{
+    background:#319455;
+    transform:translateY(-2px);
+}
+
+.add-btn:hover{
+
+    background:#059669;
+
+    transform:translateY(-2px);
+
+}
+.title{
+    font-size:42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.title i{
+    color:#404a5a;
+}
+
+
+/* ---------- Location section ---------- */
+
+.location-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+    padding:18px 22px;
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.location-info p{
+    font-size:14px;
+    color:#666;
+}
+
+.location-name{
+    font-size:18px;
+    font-weight:600;
+}
+
+.caregiver-count{
+    background:#ff6b6b;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+
+/* ---------- Filters ---------- */
+
+.filters{
+    display:flex;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.filters select{
+    padding:10px 14px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    background:white;
+    cursor:pointer;
+    font-size:14px;
+}
+
+
+/* ---------- Caregiver grid ---------- */
+
+.caregivers{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+
+/* ---------- Caregiver card ---------- */
+
+.caregiver-card{
+
+    background:white;
+    padding:18px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+
+    transition:0.2s;
+}
+
+.caregiver-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 14px rgba(0,0,0,0.1);
+}
+
+
+/* ---------- Card top ---------- */
+
+.card-top{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.caregiver-photo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.card-info h3{
+    font-size:18px;
+}
+
+.role{
+    font-size:13px;
+    color:#777;
+}
+
+.rating{
+    font-size:14px;
+    margin-top:2px;
+}
+
+
+/* ---------- Card details ---------- */
+
+.card-details{
+    font-size:14px;
+    color:#555;
+    margin-bottom:10px;
+}
+
+.card-details p{
+    margin-bottom:3px;
+}
+
+
+/* ---------- Specialization tags ---------- */
+
+.special-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:10px;
+}
+
+.tag{
+    background:#eef2ff;
+    color:#3b5bdb;
+    padding:4px 8px;
+    border-radius:6px;
+    font-size:12px;
+}
+
+
+/* ---------- Status ---------- */
+
+.status{
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.card-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.card-buttons button,
+.card-buttons a{
+
+    flex:1;
+
+    padding:8px;
+
+    border:none;
+    border-radius:6px;
+
+    font-size:14px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.card-buttons button{
+    background:#1f6feb;
+    color:white;
+}
+
+.card-buttons a{
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+}
+
+
+/* ---------- Profile Modal ---------- */
+
+.profile::backdrop{
+    background:rgba(0,0,0,0.4);
+}
+
+.profile{
+    border:none;
+    border-radius:10px;
+    padding:0;
+}
+
+.profile-content{
+    padding:25px;
+    width:400px;
+}
+
+
+/* ---------- Profile header ---------- */
+
+.profile-header{
+    display:flex;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.profile-photo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+/* ---------- Profile sections ---------- */
+
+.profile-details p{
+    margin-bottom:6px;
+}
+
+.profile-special{
+    margin-top:10px;
+}
+
+.profile-skills{
+    margin-top:15px;
+}
+
+.profile-contact{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+.profile-contact a{
+    background:#1f6feb;
+    color:white;
+    padding:8px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+
+/* ---------- Close button ---------- */
+
+.profile-close{
+    margin-top:20px;
+    padding:8px 14px;
+    border:none;
+    border-radius:6px;
+    background:#444;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:600px){
+
+    .filters{
+        flex-direction:column;
+    }
+
+    .profile-content{
+        width:90vw;
+    }
+
+}
